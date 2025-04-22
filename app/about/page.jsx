@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import ControlledCarousel from "../components/carousel";
 // import Statement from "../components/statement";
 // import AboutCards from './../components/aboutcards';
-import Statement from "./../components/statement";
+import Statement from "../components/statement";
 
 export default function About() {
   return (

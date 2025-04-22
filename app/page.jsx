@@ -10,6 +10,7 @@ import Cert from "./components/cert";
 import Cardholder from "./components/cards";
 import VideoPlayer from "./components/video";
 import Footer from "./components/footer";
+import Gallery from "./components/gallery";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         </div>
         <Cert />
         <VideoPlayer />
+        <Gallery />
       </div>
 
       <Footer />

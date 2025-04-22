@@ -82,6 +82,7 @@ function AppNavbar() {
               >
                 Home
               </Nav.Link>
+
               <Nav.Link
                 href="/services"
                 className={
@@ -90,6 +91,7 @@ function AppNavbar() {
               >
                 Services
               </Nav.Link>
+
               <Nav.Link
                 href="/about"
                 className={
@@ -98,13 +100,14 @@ function AppNavbar() {
               >
                 About
               </Nav.Link>
+
               <Nav.Link
-                href="/galary"
+                href="/gallery"
                 className={
                   pathname === "/galary" ? "nav-link active" : "nav-link"
                 }
               >
-                Galary
+                Gallery
               </Nav.Link>
             </Nav>
           </Offcanvas.Body>
