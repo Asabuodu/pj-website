@@ -19,13 +19,7 @@ const Gallery = () => {
     "/assets/cctv.jpg",
     "/assets/cctv.jpg",
     "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    "/assets/cctv.jpg",
-    // More image URLs or paths
+    // Add more here
   ];
 
   const handleImageClick = (index) => {

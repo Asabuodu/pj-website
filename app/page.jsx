@@ -10,7 +10,7 @@ import Cert from "./components/cert";
 import Cardholder from "./components/cards";
 import VideoPlayer from "./components/video";
 import Footer from "./components/footer";
-import Gallery from "./components/gallery";
+import Gallery from "./components/gallery.jsx";
 
 export default function Home() {
   return (
