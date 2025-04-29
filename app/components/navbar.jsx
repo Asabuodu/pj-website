@@ -104,7 +104,7 @@ function AppNavbar() {
               <Nav.Link
                 href="/gallery"
                 className={
-                  pathname === "/galary" ? "nav-link active" : "nav-link"
+                  pathname === "/gallery" ? "nav-link active" : "nav-link"
                 }
               >
                 Gallery

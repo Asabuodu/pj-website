@@ -11,10 +11,11 @@ import Cardholder from "./components/cards";
 import VideoPlayer from "./components/video";
 import Footer from "./components/footer";
 import Gallery from "./components/gallery.jsx";
+import Statement from "./components/statement";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <div >
       <Navbar />
       <div className="body">
         <ControlledCarousel />
@@ -25,7 +26,9 @@ export default function Home() {
         </div>
         <Cert />
         <VideoPlayer />
+        <Statement />
         <Gallery />
+
       </div>
 
       <Footer />

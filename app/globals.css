@@ -1,58 +1,14 @@
-/* @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  font-family: var(--font-roboto), sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-.body {
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-/* .navbar-nav .nav-link {
-  position: relative;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: green;
-}
-
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: green;
-  transition: width 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
-} */
 
 .navbar-nav .nav-link {
   position: relative;
@@ -93,6 +49,7 @@ body {
 
 .cert {
   background-color: #f8f9fa;
+  padding-top: 30px;
 }
 
 .certificate-img {
@@ -124,38 +81,6 @@ body {
   margin: 2rem;
 }
 
-/* statement section */
-
-/* .letter {
-  background-image: url(../public/assets/bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-/* .letter {
-  position: relative;
-  background-image: url(../public/assets/bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white; 
-  z-index: 1;
-}
-
-.letter::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: -1;
-  border-radius: 57px;
-  padding: 3px;
-} */
-
 .letter {
   position: fixed;
   background-image: url(../public/assets/bg.jpg);
@@ -180,7 +105,7 @@ body {
 .letter p {
   color: black;
   font-weight: 400;
-  font-size: larger;
+  font-size: large;
 }
 
 .letter h4 {

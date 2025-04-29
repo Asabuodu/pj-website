@@ -56,7 +56,7 @@ import syntech from "@/public/assets/syntech.png";
 function Cert() {
   return (
     <div className="cert">
-      <h4 className="text-center my-4">Certificate</h4>
+      <h4 className="text-center my-4">Certifications</h4>
 
       <Container>
         <Row>
@@ -95,9 +95,7 @@ function Cert() {
         </Row>
       </Container>
       <p className="text-center my-4 w-3/4">
-        INNOVATION DUEL: Two million naira (N2,000,000) grant to further develop
-        their solution (from ideation to ready-for-market). *Certificate of
-        Excellence for all the participants
+        
       </p>
     </div>
   );

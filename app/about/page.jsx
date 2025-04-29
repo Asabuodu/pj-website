@@ -7,6 +7,8 @@ import ControlledCarousel from "../components/carousel";
 // import Statement from "../components/statement";
 // import AboutCards from './../components/aboutcards';
 import Statement from "../components/statement";
+import VideoPlayer from "../components/video";
+import Teams from "../components/team";
 
 export default function About() {
   return (
@@ -123,7 +125,7 @@ export default function About() {
             <h4 className="">
               <u>SERVICES RENDERED:</u>
             </h4>
-            <ul className="text-white ">
+            <ul className=" ">
               <li className="list-group-item">
                 Electrical installations in building, civil, and industrial
                 engineering projects
@@ -146,6 +148,8 @@ export default function About() {
         </div>
       </div>
       <Statement />
+      <VideoPlayer />
+      <Teams/>
       <Footer />
 
       {/* Optional Custom Styling */}
