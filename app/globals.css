@@ -89,8 +89,7 @@ body {
   background-repeat: no-repeat;
   z-index: 0;
   color: rgb(15, 15, 15); /* Ensures readability */
-  border-radius: 2rem;
-  overflow: hidden; /* Clip overlay to rounded corners */
+    overflow: hidden; /* Clip overlay to rounded corners */
 }
 
 .letter::before {

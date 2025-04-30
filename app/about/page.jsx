@@ -153,7 +153,7 @@ export default function About() {
       <Footer />
 
       {/* Optional Custom Styling */}
-      <style jsx>{`
+      {/* <style jsx>{`
         h4 {
           font-weight: bold;
         }
@@ -166,7 +166,7 @@ export default function About() {
         ul li {
           margin-bottom: 0.5rem;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
