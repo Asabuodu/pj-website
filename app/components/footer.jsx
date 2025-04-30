@@ -114,6 +114,7 @@ function Footer() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    contact: "",
     email: "",
     message: "",
   });
@@ -125,7 +126,7 @@ function Footer() {
     e.preventDefault();
 
     // Example: use Formspree endpoint
-    const response = await fetch("https://formspree.io/f/yourFormID", {
+    const response = await fetch("https://formspree.io/f/xkgrokpq", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -133,7 +134,7 @@ function Footer() {
 
     if (response.ok) {
       alert("Thank you! Your message has been sent.");
-      setFormData({ firstName: "", lastName: "", email: "", message: "" });
+      setFormData({ firstName: "", lastName: "", email: "", contact: "", message: "" });
     } else {
       alert("Something went wrong. Please try again.");
     }
@@ -228,6 +229,16 @@ function Footer() {
                   placeholder="Email"
                   name="email"
                   value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-2">
+                <Form.Control
+                  type="text"
+                  placeholder="+1234567890"
+                  name="contact"
+                  value={formData.contact}
                   onChange={handleChange}
                   required
                 />
