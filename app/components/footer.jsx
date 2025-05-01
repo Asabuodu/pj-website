@@ -125,7 +125,7 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Example: use Formspree endpoint
+    // use Formspree endpoint
     const response = await fetch("https://formspree.io/f/xkgrokpq", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

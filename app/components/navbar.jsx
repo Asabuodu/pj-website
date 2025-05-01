@@ -8,10 +8,10 @@ function AppNavbar() {
   const pathname = usePathname();
 
   return (
-    <Navbar key="lg" bg="light" expand="lg" className="shadow-sm py-3">
+    <Navbar key="lg" bg="light" expand="lg" className="shadow-sm py-4">
       <Container>
         <Navbar.Brand href="/">
-          <Image src={logo} alt="Logo" width={128} height={40} priority />
+          <Image src={logo} alt="Logo" width={150} height={50} priority />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
         <Navbar.Offcanvas
@@ -25,7 +25,7 @@ function AppNavbar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="ms-auto gap-3 fw-semibold">
+            <Nav className="ms-auto gap-5 fw-semibold">
               <Nav.Link
                 href="/"
                 className={pathname === "/" ? "nav-link active" : "nav-link"}
