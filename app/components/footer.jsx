@@ -41,7 +41,7 @@
 //                 </a>
 //               </li>
 
-//               <li className="mb-2"> 
+//               <li className="mb-2">
 //                 <a href="https://ng.linkedin.com/in/thop-tech-512523195" className="text-decoration-none text-dark"
 //                   target="blank"
 //                 >
@@ -92,9 +92,6 @@
 
 // export default Footer;
 
-
-
-
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -125,8 +122,8 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // use Formspree endpoint
-    const response = await fetch("https://formspree.io/f/xkgrokpq", {
+    // use x   endpoint
+    const response = await fetch("https://formspree.io/f/xnndpyea", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -134,7 +131,13 @@ function Footer() {
 
     if (response.ok) {
       alert("Thank you! Your message has been sent.");
-      setFormData({ firstName: "", lastName: "", email: "", contact: "", message: "" });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        contact: "",
+        message: "",
+      });
     } else {
       alert("Something went wrong. Please try again.");
     }
@@ -160,17 +163,29 @@ function Footer() {
                 <BsTelephone className="me-2" /> +2348035682183, +2349094408234
               </li>
               <li className="mb-2">
-                <a href="mailto:thoptech@gmail.com" className="text-decoration-none text-dark" target="_blank">
+                <a
+                  href="mailto:thoptech@gmail.com"
+                  className="text-decoration-none text-dark"
+                  target="_blank"
+                >
                   <BsEnvelope className="me-2" /> thoptech@gmail.com
                 </a>
               </li>
               <li className="mb-2">
-                <a href="https://ng.linkedin.com/in/thop-tech-512523195" className="text-decoration-none text-dark" target="_blank">
+                <a
+                  href="https://ng.linkedin.com/in/thop-tech-512523195"
+                  className="text-decoration-none text-dark"
+                  target="_blank"
+                >
                   <BsLinkedin className="me-2" /> LinkedIn
                 </a>
               </li>
               <li className="mb-2">
-                <a href="https://wa.me/qr/WJ5XLAYFOGHZP1" className="text-decoration-none text-dark" target="_blank">
+                <a
+                  href="https://wa.me/qr/WJ5XLAYFOGHZP1"
+                  className="text-decoration-none text-dark"
+                  target="_blank"
+                >
                   <BsWhatsapp className="me-2" /> WhatsApp
                 </a>
               </li>
@@ -184,7 +199,10 @@ function Footer() {
           <Col md={3} className="text-md-start">
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="/privacypage" className="text-decoration-none text-dark">
+                <a
+                  href="/privacypage"
+                  className="text-decoration-none text-dark"
+                >
                   Privacy Policy
                 </a>
               </li>
