@@ -17,8 +17,6 @@ const Gallery = () => {
     // "/assets/cctv.jpg",
     // "/assets/cctv.jpg",
     // "/assets/cctv.jpg",
-    
-  
     "/images/13.jpg",
     "/images/11.jpg",
     "/images/22.jpg",
