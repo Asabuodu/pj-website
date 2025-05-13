@@ -1,6 +1,8 @@
 import Card from "react-bootstrap/Card";
 import teamMember1 from "../../public/staff/Adeniyi.jpg"; // Example team member image
 import teamMember2 from "../../public/staff/im.jpg";
+import teamMember3 from "../../public/staff/Seun.jpg";
+import teamMember4 from "../../public/staff/AWOYEMI.jpg";
 
 function TeamCardholder() {
   return (
@@ -41,7 +43,7 @@ function TeamCardholder() {
           </div>
 
 
-{/* Team Member 22 */}
+{/* Team Member 2 */}
 <div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
             <Card
               style={{
@@ -86,7 +88,7 @@ function TeamCardholder() {
             >
               <Card.Img
                 variant="top"
-                src={teamMember1.src}
+                src={teamMember3.src}
                 alt="Team Member"
                 style={{
                   height: "250px",
@@ -96,8 +98,8 @@ function TeamCardholder() {
                 }}
               />
               <Card.Body>
-                <Card.Title>John Doe</Card.Title>
-                <Card.Text>Chief Engineer</Card.Text>
+                <Card.Title>Seun Adeniyi </Card.Title>
+                <Card.Text>HOD- Electrical</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -116,7 +118,7 @@ function TeamCardholder() {
             >
               <Card.Img
                 variant="top"
-                src={teamMember1.src}
+                src={teamMember4.src}
                 alt="Team Member"
                 style={{
                   height: "250px",
@@ -126,8 +128,8 @@ function TeamCardholder() {
                 }}
               />
               <Card.Body>
-                <Card.Title>John Doe</Card.Title>
-                <Card.Text>Chief Engineer</Card.Text>
+                <Card.Title>Awoyemi Toheeb Damilare</Card.Title>
+                <Card.Text>Asset Engineer</Card.Text>
               </Card.Body>
             </Card>
           </div>
