@@ -3,6 +3,7 @@ import teamMember1 from "../../public/staff/Adeniyi.jpg"; // Example team member
 import teamMember2 from "../../public/staff/im.jpg";
 import teamMember3 from "../../public/staff/Seun.jpg";
 import teamMember4 from "../../public/staff/AWOYEMI.jpg";
+import teamMember5 from "../../public/staff/sec.jpg";
 
 function TeamCardholder() {
   return (
@@ -75,7 +76,40 @@ function TeamCardholder() {
 
 
 {/* Team Member 3 */}
+
 <div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
+            <Card
+              style={{
+                width: "18rem",
+                background: "#f8f9fa",
+                border: "none",
+                boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+                borderRadius: "10px",
+              }}
+              className="text-center"
+            >
+              <Card.Img
+                variant="top"
+                src={teamMember5.src}
+                alt="Team Member"
+                style={{
+                  height: "250px",
+                  objectFit: "cover",
+                  borderTopLeftRadius: "10px",
+                  borderTopRightRadius: "10px",
+                }}
+              />
+              <Card.Body>
+                <Card.Title>Olumide Adeniyi</Card.Title>
+                <Card.Text>Secretary</Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+
+
+
+{/* Team Member 4 */}
+        <div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
             <Card
               style={{
                 width: "18rem",
@@ -104,8 +138,9 @@ function TeamCardholder() {
             </Card>
           </div>
 
-{/* Team Member 4 */}
-<div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
+
+{/* Team Member 5 */}
+    <div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
             <Card
               style={{
                 width: "18rem",
@@ -134,36 +169,6 @@ function TeamCardholder() {
             </Card>
           </div>
 
-
-{/* Team Member 5 */}
-<div className="col-12 col-sm-6 col-md-4  d-flex justify-content-center mb-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "#f8f9fa",
-                border: "none",
-                boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
-                borderRadius: "10px",
-              }}
-              className="text-center"
-            >
-              <Card.Img
-                variant="top"
-                src={teamMember1.src}
-                alt="Team Member"
-                style={{
-                  height: "250px",
-                  objectFit: "cover",
-                  borderTopLeftRadius: "10px",
-                  borderTopRightRadius: "10px",
-                }}
-              />
-              <Card.Body>
-                <Card.Title>John Doe</Card.Title>
-                <Card.Text>Chief Engineer</Card.Text>
-              </Card.Body>
-            </Card>
-          </div>
 
 
 
