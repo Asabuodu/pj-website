@@ -164,7 +164,7 @@ function TeamCardholder() {
               />
               <Card.Body>
                 <Card.Title>Awoyemi Toheeb Damilare</Card.Title>
-                <Card.Text>Asset Engineer</Card.Text>
+                <Card.Text>Asst Engineer</Card.Text>
               </Card.Body>
             </Card>
           </div>
