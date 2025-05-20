@@ -1,17 +1,29 @@
 "use client";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
-import Image from "next/image";
-import logo from "@/public/assets/logo.png";
+
 
 function AppNavbar() {
-  const pathname = usePathname();
+  const [activePath, setActivePath] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setActivePath(window.location.pathname);
+    }
+  }, []);
 
   return (
     <Navbar key="lg" bg="light" expand="lg" className="shadow-sm py-4">
       <Container>
         <Navbar.Brand href="/">
-          <Image src={logo} alt="Logo" width={150} height={50} priority />
+        <img
+              src="/assets/logo.png"
+              alt="Logo"
+              width={150}
+              height={50}
+              loading="lazy"
+              priority
+              />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
         <Navbar.Offcanvas
@@ -28,33 +40,33 @@ function AppNavbar() {
             <Nav className="ms-auto gap-5 fw-semibold">
               <Nav.Link
                 href="/"
-                className={pathname === "/" ? "nav-link active" : "nav-link"}
+                className={activePath === "/" ? "nav-link active" : "nav-link"}
               >
                 Home
               </Nav.Link>
 
               <Nav.Link
-                href="/services"
+                href="/services/"
                 className={
-                  pathname === "/services" ? "nav-link active" : "nav-link"
+                  activePath === "/services/" ? "nav-link active" : "nav-link"
                 }
               >
                 Services
               </Nav.Link>
 
               <Nav.Link
-                href="/about"
+                href="/about/"
                 className={
-                  pathname === "/about" ? "nav-link active" : "nav-link"
+                  activePath === "/about/" ? "nav-link active" : "nav-link"
                 }
               >
                 About
               </Nav.Link>
 
               <Nav.Link
-                href="/gallery"
+                href="/gallery/"
                 className={
-                  pathname === "/gallery" ? "nav-link active" : "nav-link"
+                  activePath === "/gallery/" ? "nav-link active" : "nav-link"
                 }
               >
                 Gallery
